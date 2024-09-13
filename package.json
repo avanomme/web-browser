@@ -2,16 +2,14 @@
   "name": "web-browser",
   "displayName": "Web Browser",
   "description": "Open websites within VS Code editor windows",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:web-browser.openWebsite"
-  ],
+  "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -29,19 +27,17 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
-  
-    "devDependencies": {
-      "@types/vscode": "^1.60.0",
-      "@types/glob": "^7.2.0",
-      "@types/mocha": "^9.1.0",
-      "@types/node": "16.x",
-      "eslint": "^8.56.0",
-      "@typescript-eslint/eslint-plugin": "^6.21.0",
-      "@typescript-eslint/parser": "^6.21.0",
-      "glob": "^8.0.3",
-      "mocha": "^10.0.0",
-      "typescript": "^5.3.3",
-      "vscode-test": "^1.6.1"
-    }
-  
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "16.x",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^5.3.3",
+    "vscode-test": "^1.6.1"
+  }
 }
